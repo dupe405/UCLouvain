@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Authentification du document - UCLouvain</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body.uclouvain {font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;}
+    header.uclouvain.nuit {background-color:#001e42;}
+    .uclouvain.logo {height:40px;}
+    body {padding-top:70px;}
+  </style>
+</head>
+<body class="uclouvain">
+  <header class="fixed-top uclouvain nuit">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <div class="navbar-brand uclouvain logo-resp">
+         <img alt="UCLouvain logo" class="uclouvain logo" 
+     src="https://forums.scenari.org/uploads/default/original/2X/2/2033ba561e33a95bf685904e38540974991353dd.jpeg" 
+     width="100" height="auto">
+        </div>
+        <a href="/technical-details"><button type="button" class="btn btn-dark">Information technique</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <br>
+    <h1>
+      <i class="text-success fas fa-chevron-right"></i> Authentification du document&nbsp;&nbsp;&nbsp;
+      <i class="text-success fas fa-shield-alt" data-bs-toggle="tooltip" data-bs-placement="right" title="Authentifié"></i>
+    </h1>
+
+    <br>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <span>Document validé avec succès, ci-dessous les données authentiques du document</span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <br>
+    <p class="text-center">
+      Ce QR code atteste l’authenticité des données affichées <span class="text-decoration-underline">à la date d’émission du document par l’ <span class="fw-bold">UCLouvain</span></span>.
+    </p>
+
+    <br>
+
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td class="table-primary text-center" colspan="2">Ces informations concernent le document : <span class="fw-bold">Annexe 1</span></td>
+        </tr>
+        <tr>
+          <td class="w-25">Nom</td>
+          <td class="w-75">Zerradi</td>
+        </tr>
+        <tr>
+          <td class="w-25">Prénom</td>
+          <td class="w-75">Akli</td>
+        </tr>
+        <tr>
+          <td class="w-25">Date de naissance</td>
+          <td class="w-75">10/11/1989</td>
+        </tr>
+        <tr>
+          <td class="w-25">Nationalité</td>
+          <td class="w-75">algérienne</td>
+        </tr>
+        <tr>
+          <td class="w-25">Inscription(s) concernée(s)</td>
+          <td class="w-75">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td class="w-25">Année académique</td>
+                  <td class="w-75">2025-2026</td>
+                </tr>
+                <tr>
+                  <td class="w-25">Sigle du programme d'étude</td>
+                  <td class="w-75">HUMA2 MC/</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="w-25">Type d'autorisation/inscription</td>
+          <td class="w-75">Inscription définitive</td>
+        </tr>
+        <tr>
+          <td class="table-dark text-center" colspan="2">Ces informations ont été scellées dans le QRCODE à la date du (heure belge) : <span class="fw-bold">24/11/2025 à 03:53:37</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <h1><i class="fas fa-chevron-right"></i>&nbsp;Principe d'authentification</h1>
+    <br>
+    <p>Afin de garantir que les documents émis par l'UCLouvain puissent être distingués de faux, nous fournissons sur ceux qui sont les plus sensibles un QRCODE de validation.</p>
+    <p>Ce QRCODE contient à l'intérieur toutes les informations présentes sur cette page, et ce, chiffrées de façon cryptographique.</p>
+    <p>Seul un QRCODE authentique et non modifié peut ainsi être déchiffré et affiché sur cette page sans problème. Afin de garantir la meilleure chaîne d'authentification possible, merci de suivre ces quelques conseils :</p>
+    <br>
+    <ol>
+      <li>Scanner le QRCODE présent sur le document pour être dirigé vers le site de l'UCLouvain</li>
+      <li>Vérifier que vous êtes bien sur le véritable site http<span class="alert-success fw-bold text-decoration-underline">s</span>://dupe.uclouvain.be</li>
+      <li>Confirmer que le programme affiche un statut <span class="alert-success">VERT (<i class="fas fa-shield-alt"></i>)</span> ou du moins <span class="alert-info">BLEU (<i class="fas fa-info-circle"></i>)</span></li>
+      <li>En cas de statut <span class="alert-warning">ORANGE (<i class="fas fa-exclamation-triangle"></i>)</span>, merci de tenir compte des avertissements affichés</li>
+      <li>Si le statut est <span class="alert-danger">ROUGE (<i class="fas fa-exclamation-circle"></i>)</span> cela signifie très certainement que le QRCODE est altéré et/ou non authentique</li>
+      <li>Comparer les éléments affichés sur cette page avec ceux présents dans le document afin de garantir que le texte du document n'a pas été modifié</li>
+    </ol>
+    <br><br>
+  </div>
+
+  <footer class="footer overflow-hidden">
+    <div class="navbar bg-light text-muted">
+      <div class="container-fluid my-0 d-none d-lg-block">
+        <p class="navbar-text float-left">Conçu par <a href="https://uclouvain.be/fr/repertoires/entites/sips" target="_blank" rel="noopener">SGSI/SIPS</a>.</p>
+        <p class="navbar-text float-right"><a href="https://www.uclouvain.be" target="_blank" rel="noopener">Université catholique de Louvain</a> © 2022 - <span id="current-year"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)});
+  </script>
+</body>
+</html>
